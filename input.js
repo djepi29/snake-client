@@ -1,8 +1,8 @@
 // declaring variable to later have it store the active TCP connection object 'conn' returned from the connect function;
-let connection; 
+let connection;
 // setup interface to handle user input from stdin
 
-const setupInput = function (conn) {
+const setupInput = function(conn) {
   connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
@@ -12,7 +12,7 @@ const setupInput = function (conn) {
   return stdin;
 };
 
-const handleUserInput = function (key) {
+const handleUserInput = function(key) {
   if (key === '\u0003') {
     process.exit();
   } else if (key === "w") {
