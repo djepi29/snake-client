@@ -1,4 +1,4 @@
-// stores the active TCP connection object;
+// declaring variable to later have it store the active TCP connection object 'conn' returned from the connect function;
 let connection; 
 // setup interface to handle user input from stdin
 

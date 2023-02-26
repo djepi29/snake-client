@@ -7,8 +7,8 @@ const net = require("net");
 
 const connect = function () {
   const conn = net.createConnection({
-    IP,// IP address here,
-    PORT// PORT number here,
+    ip : IP,// IP address here,
+    port : PORT// PORT number here,
   });
 
   // interpret incoming data as text
